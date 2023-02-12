@@ -2,8 +2,15 @@
         
 <template>
 	<div class="eyes">
+		<span class="view-finder-outside border">
+			<span class="base" />
+			<span class="part-1" />
+			<span class="part-2" />
+		</span>
 		<span class="view-finder-outside">
 			<span class="base" />
+			<span class="part-1" />
+			<span class="part-2" />
 		</span>
 		<span class="view-finder">
 			<span class="eye">
@@ -23,12 +30,53 @@
 
 .eyes {
 	position: relative;
-	.view-finder-outside{
+
+	.view-finder-outside {
 		position: absolute;
+		margin-top: 15.5em;
+		margin-left: -10em;
+
 		.base {
 			background-color: $light-gray;
+			padding-left: 18em;
+			padding-top: 6em;
+			margin-left: 0.8em;
+			border-radius: 4em;
+		}
+
+		.part-1 {
+			position: absolute;
+			background-color: $light-gray;
+			padding-left: 14em;
+			padding-top: 7.8em;
+			margin-left: 0.8em;
+			border-radius: 3em;
+			left: -0.3em;
+			bottom: 0.4em;
+		}
+
+		.part-2 {
+			position: absolute;
+			background-color: $light-gray;
+			padding-left: 5em;
+			padding-top: 7.9em;
+			margin-left: 8.8em;
+			right: 4.2em;
+			bottom: 2.7em;
+			transform: rotate(-59deg);
+			clip-path: polygon(0 0, 100% 43%, 100% 100%, 0% 100%);
+		}
+
+		&.border {
+			margin-top: 15.7em;
+			transform: scale(105%);
+
+			> * {
+				background-color: $black;
+			}
 		}
 	}
+
 	.view-finder {
 		position: relative;
 		display: inline-block;
