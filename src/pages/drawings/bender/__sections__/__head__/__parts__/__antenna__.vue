@@ -14,7 +14,7 @@
 </template>
 
 <style scoped lang="scss">
-@import '../bender';
+@import 'styles/drawings/bender';
 
 .antenna {
 	position: relative;

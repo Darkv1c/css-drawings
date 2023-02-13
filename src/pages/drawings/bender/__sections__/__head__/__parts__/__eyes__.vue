@@ -26,7 +26,7 @@
 
 
 <style scoped lang="scss">
-@import '../bender';
+@import 'styles/drawings/bender';
 
 .eyes {
 	position: relative;

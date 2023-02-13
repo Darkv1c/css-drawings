@@ -1,0 +1,1 @@
+export { default as BenderHead } from './__head__/index.vue'

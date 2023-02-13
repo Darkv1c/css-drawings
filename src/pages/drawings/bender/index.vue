@@ -1,14 +1,12 @@
 <script setup lang="ts">
 import { bender } from 'assets/base_drawings';
-import { Antenna, Eyes, Teeth } from './__parts__' 
+import { BenderHead } from './__sections__'
 </script>
 
 <template>
 	<div class="bender">
 		<div class="own">
-			<antenna class="antenna" />
-			<eyes />
-			<teeth />
+			<bender-head />
 		</div>
 		<img :src="bender" alt="bender original" class="base">
 	</div>

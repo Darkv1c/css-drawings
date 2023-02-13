@@ -13,7 +13,8 @@
     "types": ["vite-plugin-pages/client", "node"],
     "baseUrl": "src",
     "paths": {
-      "assets/*":  ["assets/*"]
+      "assets/*":  ["assets/*"],
+      "styles/*": ["styles/*"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],

@@ -13,8 +13,7 @@
 </template>
 
 <style scoped lang="scss">
-@import '../bender';
-
+@import 'styles/drawings/bender';
 
 .mouth-container {
     .mouth {
